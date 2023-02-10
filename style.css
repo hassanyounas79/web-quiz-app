@@ -17,14 +17,109 @@ body {
     width: 100vw;
     height: 60vh;
     display: flex;
-    background-color: yellowgreen;
+    background-color: rgb(95, 189, 139);
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 .button {
     outline: none;
     height: 50px;
     width: 100px;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+.startBtn {
     background-color: aliceblue;
+    border: 3px solid rgb(54, 109, 218);
+    display: none;
+}
+
+.box {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: white;
+    border-radius: 5px;
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+}
+
+.box header {
+    width: 100%;
+    background-color: wheat;
+    flex: 2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4px 10px;
+}
+
+.box header span {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.timer {
+    margin-right: 0px;
+}
+
+.questionBox {
+    flex: 8;
+
+}
+
+footer {
+    flex: 2;
+}
+
+.questionBox {
+    padding: 10px 20px;
+}
+
+.questionBox h5 {
+    font-size: larger;
+    font-weight: 600;
+}
+
+.questionBox ul {
+    display: block;
+}
+
+.questionBox ul li {
+    list-style-type: none;
+    display: flex;
+    background-color: white;
+    margin: 10px 0px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid black;
+    justify-content: space-between;
+    cursor: pointer;
+
+}
+
+.icon {
+    border-radius: 50%;
+    height: 25px;
+    width: 25px;
+    background-color: aquamarine;
+    text-align: center;
+}
+
+.option.true,
+.true {
+    color: green;
+    border: 2px solid green;
+}
+
+.option.false,
+.false {
+    color: red;
+    border: 2px solid rgb(238, 159, 159);
+
 }

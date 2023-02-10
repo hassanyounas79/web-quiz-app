@@ -1,16 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz APP</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+
 </head>
+
 <body>
     <div class="main">
         <button class="button startBtn">Start Quiz</button>
+        <div class="box">
+            <header>
+                <span>Awesome Quiz</span>
+                <div class="timer">
+                    <span>Time reamaining</span>
+                    <span id="time">15</span>
+                </div>
+
+            </header>
+            <div class="questionBox">
+                <h5>What CSS stands for?</h5>
+                <ul class="optionList">
+                    <li class="option true">
+                        Cascading Style stylesheet
+                        <span class="icon true fa fa-check"></span>
+                    </li>
+                    <li class="option false">
+                        Cascading Style stylesheet
+                        <span class="icon false fa fa-x"></span>
+                    </li>
+                    <li class="option">
+                        Cascading Style stylesheet
+                    </li>
+                    <li class="option">
+                        Cascading Style stylesheet
+                    </li>
+                </ul>
+            </div>
+            <footer>
+
+            </footer>
+
+        </div>
     </div>
-    
+
+
 </body>
+
 </html>
